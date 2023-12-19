@@ -370,7 +370,7 @@ def main():
     linked = linkage(df_tratado, 'ward')
     # Gerando o dendrograma
     plt.figure(figsize=(10, 7))
-    #dendrogram(linked, orientation='top', distance_sort='descending', show_leaf_counts=True)
+    dendrogram(linked, orientation='top', distance_sort='descending', show_leaf_counts=True)
     st.pyplot(plt)
    
     st.markdown(''' 
